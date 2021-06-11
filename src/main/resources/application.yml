@@ -1,0 +1,23 @@
+jwt:
+  secret: javainuse
+
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    driver-class-name: org.h2.Driver
+#    username: sa
+  datasource:
+    url: jdbc:mysql://localhost:3306/formula_1?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password:
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    generate-ddl: true
+#    show-sql: true
+#    hibernate:
+      ddl-auto: none
+  application:
+    name: auth-service
+server:
+  port: 9345
+
